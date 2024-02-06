@@ -1,0 +1,136 @@
+html,
+body {
+  min-width: 290px;
+  color: #f7f7f7; /* Light grey text for readability on dark backgrounds */
+  background-color: #1a1a2e; /* Dark background for a modern look */
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: #16213e; /* Slightly lighter dark shade for contrast */
+  border-right: solid 2px #0f3460; /* Border color */
+  overflow-y: auto; /* Ensure the navbar is scrollable if content overflows */
+}
+
+header {
+  color: #e94560; /* Accent color */
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  color: #f7f7f7; /* Light grey text for readability */
+}
+
+#navbar ul {
+  padding: 0;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid #0f3460; /* Border color */
+  list-style: none;
+  position: relative;
+  width: 100%;
+  background-color: #16213e; /* Slightly lighter dark shade for contrast */
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #f7f7f7; /* Light grey text */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-section {
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.main-section header {
+  text-align: left;
+  margin: 0px;
+  color: #e94560; /* Accent color for headers in main doc */
+  font-size: 2.2em; /* Larger size for section headers */
+}
+
+.main-section p {
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+.main-section ul {
+  list-style: none; /* Remove default list styling */
+  padding-left: 20px; /* Indent the list */
+}
+
+.main-section li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #0a0a0a; /* Very dark background for code blocks */
+  color: #00b894; /* Light green text for code, easy to read on dark background */
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border-left: 3px solid #e94560; /* Accent color */
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar {
+    background-color: #16213e; /* Slightly lighter dark shade for contrast */
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid #0f3460; /* Border color */
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
